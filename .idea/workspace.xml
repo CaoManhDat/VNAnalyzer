@@ -4,13 +4,37 @@
     <list default="true" id="08f043d2-e06f-414a-8d24-651b1e8a42bd" name="Default" comment="" />
     <ignored path="VNAnalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/VNTokenizer.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372213311230" ignored="false" />
+    <file path="/VNTokenizer.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238334585" ignored="false" />
     <file path="/TestAnalyzer.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372213381865" ignored="false" />
-    <file path="/Test.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372211492671" ignored="false" />
+    <file path="/Test.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372239405524" ignored="false" />
     <file path="/VNAnalyzer.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372212737743" ignored="false" />
     <file path="/fragment.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372211583633" ignored="false" />
-    <file path="/AnalyzerTest.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372213381226" ignored="false" />
+    <file path="/AnalyzerTest.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372239966903" ignored="false" />
     <file path="/VietTokenizerWrapper.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372213072689" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/corpus/jaxb/ObjectFactory.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133646" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/corpus/jaxb/Corpus.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133646" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/corpus/jaxb/Body.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133646" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/corpus/jaxb/S.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133646" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/graph/EdgeNode.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133646" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/graph/AdjacencyListWeightedGraph.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133646" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/graph/io/GraphIO.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133986" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/graph/Node.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/graph/search/FloydWarshallTest.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/graph/search/GraphDFS.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133986" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/graph/test/ShortestPathFinderTest.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/graph/util/GraphUtilities.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/lang/model/bigram/Bigram.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238134459" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/lang/model/bigram/Resolver.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133986" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/lang/model/unigram/Unigram.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/lexicon/jaxb/Body.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/lexicon/jaxb/Corpus.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/tokenizer/io/Outputer.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/lexicon/jaxb/ObjectFactory.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/tokenizer/segmenter/UnigramResolver.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/tokenizer/tools/Alphabet.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238133647" ignored="false" />
+    <file path="$PROJECT_DIR$/src/vn/hus/nlp/tokenizer/tools/StringSorter.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238134459" ignored="false" />
+    <file path="/tokenizer.properties" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372238953036" ignored="false" />
+    <file path="/FileContent.java" changelist="08f043d2-e06f-414a-8d24-651b1e8a42bd" time="1372239359540" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +84,22 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VNTokenizer.java" line="60" class="com.bk.vnanalyzer.VNTokenizer" package="com.bk.vnanalyzer">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -69,40 +109,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ViStopWordsProvider.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/ViStopWordsProvider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="91" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AnalyzerTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/test/AnalyzerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="66" selection-start="1969" selection-end="1969" vertical-scroll-proportion="1.5614035">
+            <state line="96" column="70" selection-start="3570" selection-end="3570" vertical-scroll-proportion="0.56395346">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1764#1781#0" expanded="true" />
+                <element signature="e#2782#2799#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VNAnalyzer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VNAnalyzer.java">
+      <file leaf-file-name="Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+            <state line="64" column="20" selection-start="2271" selection-end="2570" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="289" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VietTokenizerWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VietTokenizerWrapper.java">
+      <file leaf-file-name="3.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/3.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
+            <state line="3" column="7" selection-start="147" selection-end="154" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -111,16 +153,43 @@
       <file leaf-file-name="VNTokenizer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VNTokenizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="92" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.0">
+            <state line="47" column="12" selection-start="1389" selection-end="1503" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stopwords.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/stopwords.txt">
+      <file leaf-file-name="VNAnalyzer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VNAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VietTokenizer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vn/hus/nlp/tokenizer/VietTokenizer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="0" selection-start="2074" selection-end="2074" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tokenizer.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tokenizer.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VietTokenizerWrapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VietTokenizerWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -138,12 +207,16 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/ViStopWordsProvider.java" />
         <option value="$PROJECT_DIR$/resources/stopwords.txt" />
-        <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/test/Test.java" />
         <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/test/TestAnalyzerTest.java" />
         <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/test/TestAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/VNAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/VietTokenizerWrapper.java" />
         <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/VNTokenizer.java" />
+        <option value="$PROJECT_DIR$/tokenizer.properties" />
+        <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/test/GetFileContent.java" />
+        <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/test/FileContent.java" />
+        <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/FileContent.java" />
+        <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/test/Test.java" />
         <option value="$PROJECT_DIR$/src/com/bk/vnanalyzer/test/AnalyzerTest.java" />
       </list>
     </option>
@@ -179,6 +252,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -211,14 +285,63 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VNAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VNAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vnanalyzer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VNAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VNAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vnanalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VNAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VNAnalyzer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,25 +359,32 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.bk.vnanalyzer.test" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/lib" />
+      <recent name="$PROJECT_DIR$/doc" />
       <recent name="$PROJECT_DIR$/src/com/bk/vnanalyzer" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/bk/vnanalyzer" />
+      <recent name="$PROJECT_DIR$/doc" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.AnalyzerTest">
+  <component name="RunManager" selected="JUnit.AnalyzerTest.termOffsetTest">
     <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.bk.vnanalyzer.test.Test" />
       <option name="VM_PARAMETERS" />
@@ -267,7 +397,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="VNAnalyzer" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -299,50 +435,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="AnalyzerTest.TestAnalyzerDocument" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="VNAnalyzer" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.bk.vnanalyzer.test" />
-      <option name="MAIN_CLASS_NAME" value="com.bk.vnanalyzer.test.AnalyzerTest" />
-      <option name="METHOD_NAME" value="TestAnalyzerDocument" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="AnalyzerTest.TestTermOffset" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="VNAnalyzer" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.bk.vnanalyzer.test" />
-      <option name="MAIN_CLASS_NAME" value="com.bk.vnanalyzer.test.AnalyzerTest" />
-      <option name="METHOD_NAME" value="TestTermOffset" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="AnalyzerTest.TestTermFreq" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="VNAnalyzer" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -350,6 +442,50 @@
       <option name="PACKAGE_NAME" value="com.bk.vnanalyzer.test" />
       <option name="MAIN_CLASS_NAME" value="com.bk.vnanalyzer.test.AnalyzerTest" />
       <option name="METHOD_NAME" value="TestTermFreq" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AnalyzerTest.termFreqTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="VNAnalyzer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bk.vnanalyzer.test" />
+      <option name="MAIN_CLASS_NAME" value="com.bk.vnanalyzer.test.AnalyzerTest" />
+      <option name="METHOD_NAME" value="termFreqTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AnalyzerTest.termOffsetTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="VNAnalyzer" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bk.vnanalyzer.test" />
+      <option name="MAIN_CLASS_NAME" value="com.bk.vnanalyzer.test.AnalyzerTest" />
+      <option name="METHOD_NAME" value="termOffsetTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -423,17 +559,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Test" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.AnalyzerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.TestAnalyzerDocument" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.TestTermOffset" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.TestTermFreq" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.TestTermFreq" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.termFreqTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.termOffsetTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AnalyzerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.TestTermFreq" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.TestTermOffset" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.TestAnalyzerDocument" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.termOffsetTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AnalyzerTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.termFreqTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AnalyzerTest.TestTermFreq" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -479,27 +615,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="725" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289256" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6710744" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26661265" sideWeight="0.6743802" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3289256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32561985" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -558,16 +694,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/stopwords.txt">
+    <entry file="file://$PROJECT_DIR$/src/vn/hus/nlp/corpus/CorpusMarshaller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/lucene-core-3.6.2.jar!/org/apache/lucene/analysis/Tokenizer.class">
+    <entry file="file://$PROJECT_DIR$/tokenizer.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1293" selection-end="1293" vertical-scroll-proportion="-10.08">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -579,47 +715,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/vn.hus.nlp.tokenizer-4.1.1.jar!/vn/hus/nlp/tokenizer/TokenizerProvider.class">
+    <entry file="jar://$PROJECT_DIR$/lib/lucene-core-3.6.2.jar!/org/apache/lucene/search/IndexSearcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="533" selection-end="550" vertical-scroll-proportion="0.4703833">
+        <state line="65" column="44" selection-start="3615" selection-end="3615" vertical-scroll-proportion="0.36131388">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="7" selection-start="147" selection-end="154" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VietTokenizerWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
+        <state line="29" column="0" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/vn.hus.nlp.tokenizer-4.1.1.jar!/vn/hus/nlp/tokenizer/VietTokenizer.class">
+    <entry file="file://$PROJECT_DIR$/src/vn/hus/nlp/tokenizer/VietTokenizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="61" selection-start="1139" selection-end="1151" vertical-scroll-proportion="-7.8">
+        <state line="84" column="0" selection-start="2074" selection-end="2074" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VNTokenizer.java">
+    <entry file="file://$PROJECT_DIR$/tokenizer.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="92" selection-start="1383" selection-end="1383" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VNAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0">
+        <state line="33" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/VNTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="12" selection-start="1389" selection-end="1503" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="20" selection-start="2271" selection-end="2570" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="289" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bk/vnanalyzer/test/AnalyzerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="66" selection-start="1969" selection-end="1969" vertical-scroll-proportion="1.5614035">
+        <state line="96" column="70" selection-start="3570" selection-end="3570" vertical-scroll-proportion="0.56395346">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1764#1781#0" expanded="true" />
+            <element signature="e#2782#2799#0" expanded="true" />
           </folding>
         </state>
       </provider>

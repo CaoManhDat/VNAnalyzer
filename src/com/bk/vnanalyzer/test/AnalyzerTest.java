@@ -7,13 +7,17 @@ import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.index.*;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.TermQuery;
+import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
-import org.apache.lucene.store.FSDirectory;
 import org.apache.lucene.store.RAMDirectory;
 import org.apache.lucene.util.Version;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -37,6 +41,18 @@ public class AnalyzerTest {
         Document doc2 = new Document();
         doc2.add(new Field("content","viện công nghệ thông tin đại học bách khoa hà nội", Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.WITH_POSITIONS_OFFSETS));
 
+        for(int i = 0; i < 4; i++){
+            BufferedReader bufferedReader = new BufferedReader(new FileReader("doc/"+i+".txt"));
+            StringBuffer bufferContent = new StringBuffer("");
+            String line;
+            while( (line = bufferedReader.readLine()) != null){
+                bufferContent.append(line+"\n");
+            }
+            Document doc = new Document();
+            doc.add(new Field("content",bufferContent.toString(), Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.WITH_POSITIONS_OFFSETS));
+            indexWriter.addDocument(doc);
+        }
+
         indexWriter.addDocument(doc1);
         indexWriter.addDocument(doc2);
         indexWriter.close();
@@ -44,6 +60,14 @@ public class AnalyzerTest {
         indexReader = IndexReader.open(d);
     }
 
+    @Test
+    public void searchTest() throws IOException {
+
+        IndexSearcher searcher = new IndexSearcher(indexReader);
+        TopDocs result = searcher.search(new TermQuery(new Term("content", "bkviews")), 5);
+        Assert.assertEquals(1,result.scoreDocs.length);
+
+    }
 
     @Test
     public void termFreqTest() throws IOException {
@@ -53,21 +77,19 @@ public class AnalyzerTest {
         termFreq.put("bách khoa",2);
         termFreq.put("công nghệ thông tin",1);
         termFreq.put("hà nội",2);
-        termFreq.put("đại học",2);
-
 
         TermEnum termEnum = indexReader.terms();
         while (termEnum.next()) {
             Term term = termEnum.term();
-            Assert.assertEquals((int)termFreq.get(term.text()),termEnum.docFreq());
+            if(termFreq.get(term.text())!= null) Assert.assertEquals((int)termFreq.get(term.text()),termEnum.docFreq());
         }
     }
 
     @Test
     public void termOffsetTest() throws IOException {
 
-        String docContent = indexReader.document(0).get("content");
-        TermFreqVector[] tfvs = indexReader.getTermFreqVectors(0);
+        String docContent = indexReader.document(4).get("content");
+        TermFreqVector[] tfvs = indexReader.getTermFreqVectors(4);
 
         for (TermFreqVector tfv : tfvs) {
             TermPositionVector tpv = (TermPositionVector)tfv;
@@ -77,6 +99,7 @@ public class AnalyzerTest {
             for (int j = 0; j < termTexts.length; j++) {
                 TermVectorOffsetInfo[] tvoi = tpv.getOffsets(j); // all position that term appear
                 for(TermVectorOffsetInfo termOffset : tvoi){
+
                     Assert.assertEquals(docContent.indexOf(termTexts[j]), termOffset.getStartOffset());
                     Assert.assertEquals(docContent.indexOf(termTexts[j])+termTexts[j].length(),termOffset.getEndOffset());
                 }

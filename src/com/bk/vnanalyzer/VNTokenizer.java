@@ -18,7 +18,7 @@ import vn.hus.nlp.tokenizer.tokens.TaggedWord;
 
 public class VNTokenizer extends Tokenizer{
 
-    List<TaggedWord> taggedWords;
+    String[] taggedWords;
     private int numWord;
 
     private int index = 0;
@@ -26,7 +26,7 @@ public class VNTokenizer extends Tokenizer{
     private final CharTermAttribute termAttr;
     private final PositionIncrementAttribute posAttr;
     private final OffsetAttribute offsetAttr;
-
+    private String lastContent;
 
 
     public VNTokenizer(Reader input){
@@ -40,15 +40,25 @@ public class VNTokenizer extends Tokenizer{
 
 
     private void getTaggedWords(Reader input){
-        try{
+        BufferedReader bufferedReader = new BufferedReader(input);
+        StringBuffer bufferContent = new StringBuffer("");
+        String line;
 
-            VietTokenizerWrapper.getVietTokenizer().getTokenizer().tokenize(input);
-            taggedWords = VietTokenizerWrapper.getVietTokenizer().getTokenizer().getResult();
+        try{
+            while( (line = bufferedReader.readLine()) != null){
+                bufferContent.append(line+"\n");
+            }
+            lastContent = bufferContent.toString();
+
+            taggedWords = VietTokenizerWrapper.getVietTokenizer().segment(lastContent).split(" ");
+            for(int i = 0; i <taggedWords.length;i++){
+                taggedWords[i] = taggedWords[i].replaceAll("_"," ");
+            }
         }catch (IOException e){
             System.err.println("Error Tokenizer Input : " + input);
-            taggedWords = new ArrayList<TaggedWord>();
+            taggedWords = new String[0];
         }
-        numWord = taggedWords.size();
+        numWord = taggedWords.length;
         offset = 0;
         index = 0;
     }
@@ -59,15 +69,29 @@ public class VNTokenizer extends Tokenizer{
         clearAttributes();
         if (index == numWord)
             return false;
-        TaggedWord wordTag = taggedWords.get(index);
-        String termTex = wordTag.getText();
+        String wordTag = taggedWords[index];
+        String nextWordTag = null;
+        try{
+            nextWordTag = taggedWords[index+1];
+        }catch (ArrayIndexOutOfBoundsException e){
 
-        termAttr.copyBuffer(termTex.toCharArray(),0,termTex.length());
+        }
+
+
+        termAttr.copyBuffer(wordTag.toCharArray(),0,wordTag.length());
         posAttr.setPositionIncrement(1);
-        offsetAttr.setOffset(offset, offset+termTex.length());
+        offsetAttr.setOffset(offset, offset+wordTag.length());
 
-        offset += termTex.length();
-        offset++;
+        offset += wordTag.length();
+
+        // Correct offset for two words
+        if(index != numWord){
+            if(nextWordTag == null || lastContent.indexOf(nextWordTag,offset) == offset){
+
+            }else{
+                offset++;
+            }
+        }
         index++;
         return true;
     }

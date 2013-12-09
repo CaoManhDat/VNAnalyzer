@@ -46,13 +46,13 @@ public class Test {
 
     public static void main(String[] args) throws IOException {
         Directory d = new RAMDirectory();
-        Analyzer viAnalyzer = new VNAnalyzer(Version.LUCENE_36, ViStopWordsProvider.getStopWords("resources/stopwords.txt"));
+        Analyzer viAnalyzer = new VNAnalyzer(Version.LUCENE_43, ViStopWordsProvider.getStopWords("resources/stopwords.txt"));
 
-        IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_36,viAnalyzer);
+        IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_43,viAnalyzer);
         IndexWriter indexWriter = new IndexWriter(d, config);
 
         Document doc1 = new Document();
-        doc1.add(new Field("content","đại học bách khoa hà nội", Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.WITH_POSITIONS_OFFSETS));
+        doc1.add(new Field("content","sinh sinh viên đại học bách khoa hà nội", Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.WITH_POSITIONS_OFFSETS));
         Document doc2 = new Document();
         doc2.add(new Field("content","viện công nghệ thông tin đại học bách khoa hà nội", Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.WITH_POSITIONS_OFFSETS));
 
@@ -76,7 +76,7 @@ public class Test {
         indexWriter.close();
 
         IndexSearcher searcher = new IndexSearcher(IndexReader.open(d));
-        TopDocs result = searcher.search(new TermQuery(new Term("content", "bkviews")), 5);
+        TopDocs result = searcher.search(new TermQuery(new Term("content", "sinh")), 5);
         for(int i = 0; i < result.scoreDocs.length; i++){
             System.out.println("Search hit : " + result.scoreDocs[i].doc);
         }

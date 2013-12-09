@@ -6,12 +6,16 @@ import junit.framework.Assert;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
+import org.apache.lucene.document.FieldType;
+import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.*;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.TermQuery;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.RAMDirectory;
+import org.apache.lucene.util.Bits;
+import org.apache.lucene.util.BytesRef;
 import org.apache.lucene.util.Version;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,28 +35,22 @@ public class AnalyzerTest {
     @Before
     public void createDocument() throws IOException {
         Directory d = new RAMDirectory();
-        Analyzer viAnalyzer = new VNAnalyzer(Version.LUCENE_36,ViStopWordsProvider.getStopWords("resources/stopwords.txt"));
+        VNAnalyzer viAnalyzer = new VNAnalyzer(Version.LUCENE_43,ViStopWordsProvider.getStopWords("resources/stopwords.txt"));
 
-        IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_36,viAnalyzer);
+        IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_43,viAnalyzer);
         IndexWriter indexWriter = new IndexWriter(d, config);
 
+
+        FieldType fieldType = new FieldType();
+        fieldType.setIndexed(true);
+        fieldType.setStored(true);
+        fieldType.setStoreTermVectors(true);
+        fieldType.setStoreTermVectorOffsets(true);
+
         Document doc1 = new Document();
-        doc1.add(new Field("content","đại học bách khoa hà nội", Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.WITH_POSITIONS_OFFSETS));
+        doc1.add(new Field("content","sinh sinh viên đại học bách khoa hà nội", fieldType));
         Document doc2 = new Document();
-        doc2.add(new Field("content","viện công nghệ thông tin đại học bách khoa hà nội", Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.WITH_POSITIONS_OFFSETS));
-
-        for(int i = 0; i < 4; i++){
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("doc/"+i+".txt"));
-            StringBuffer bufferContent = new StringBuffer("");
-            String line;
-            while( (line = bufferedReader.readLine()) != null){
-                bufferContent.append(line+"\n");
-            }
-            Document doc = new Document();
-            doc.add(new Field("content",bufferContent.toString(), Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.WITH_POSITIONS_OFFSETS));
-            indexWriter.addDocument(doc);
-        }
-
+        doc2.add(new Field("content","viện công nghệ thông tin đại học bách khoa hà nội", fieldType));
         indexWriter.addDocument(doc1);
         indexWriter.addDocument(doc2);
         indexWriter.close();
@@ -73,37 +71,35 @@ public class AnalyzerTest {
     public void termFreqTest() throws IOException {
 
         HashMap<String,Integer> termFreq = new HashMap<String, Integer>();
+        termFreq.put("sinh viên",1);
         termFreq.put("viện",1);
         termFreq.put("bách khoa",2);
         termFreq.put("công nghệ thông tin",1);
         termFreq.put("hà nội",2);
-
-        TermEnum termEnum = indexReader.terms();
-        while (termEnum.next()) {
-            Term term = termEnum.term();
-            if(termFreq.get(term.text())!= null) Assert.assertEquals((int)termFreq.get(term.text()),termEnum.docFreq());
+//        Fields
+        Fields fields = MultiFields.getFields(indexReader);
+        Terms terms = fields.terms("content");
+        TermsEnum termsEnum = terms.iterator(null);
+        BytesRef text;
+        while ((text = termsEnum.next()) != null) {
+            System.out.println(text.utf8ToString() + " " + termsEnum.docFreq());
+            if(termFreq.get(text.utf8ToString())!= null) Assert.assertEquals((int)termFreq.get(text.utf8ToString()),termsEnum.docFreq());
         }
     }
 
     @Test
     public void termOffsetTest() throws IOException {
 
-        String docContent = indexReader.document(4).get("content");
-        TermFreqVector[] tfvs = indexReader.getTermFreqVectors(4);
-
-        for (TermFreqVector tfv : tfvs) {
-            TermPositionVector tpv = (TermPositionVector)tfv;
-
-            String[] termTexts = tfv.getTerms();
-
-            for (int j = 0; j < termTexts.length; j++) {
-                TermVectorOffsetInfo[] tvoi = tpv.getOffsets(j); // all position that term appear
-                for(TermVectorOffsetInfo termOffset : tvoi){
-
-                    Assert.assertEquals(docContent.indexOf(termTexts[j]), termOffset.getStartOffset());
-                    Assert.assertEquals(docContent.indexOf(termTexts[j])+termTexts[j].length(),termOffset.getEndOffset());
-                }
-            }
+        String docContent = indexReader.document(0).get("content");
+        Terms tfvs = indexReader.getTermVector(0,"content");
+        TermsEnum terms = tfvs.iterator(null);
+        BytesRef term = null;
+        while ((term = terms.next()) != null) {
+            DocsAndPositionsEnum docsAndPositionsEnum = terms.docsAndPositions(MultiFields.getLiveDocs(indexReader),null);
+            docsAndPositionsEnum.nextDoc();
+            docsAndPositionsEnum.nextPosition();
+            Assert.assertEquals(docContent.indexOf(term.utf8ToString()), docsAndPositionsEnum.startOffset());
+            Assert.assertEquals(docContent.indexOf(term.utf8ToString())+term.utf8ToString().length(),docsAndPositionsEnum.endOffset());
         }
     }
 }

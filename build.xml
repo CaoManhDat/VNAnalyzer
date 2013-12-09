@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<project name="VnAnalyzer4" default="package">
+	<path id="compile.classpath">
+	    <fileset dir="lib" includes="*.jar" />
+	</path>
+
+	<target name="init">
+		<mkdir dir="build/classes" /> <mkdir dir="dist" />
+	</target>
+
+	<target name="compile" depends="init" description="Compile Java code"> 
+		<javac srcdir="src" destdir="build/classes" classpathref="compile.classpath" includeantruntime="false"/>
+	</target>
+	
+	<target name="package" depends="compile" description="Generate JAR file"> 
+		<jar destfile="dist/vnanalyzer4.jar" basedir="build/classes"/>
+	</target>
+	
+	<target name="clean" description="Deletes generated directories"> 
+		<delete dir="build" />
+		<delete dir="dist" />
+	</target> 
+
+</project>

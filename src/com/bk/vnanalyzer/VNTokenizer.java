@@ -30,8 +30,7 @@ public class VNTokenizer extends Tokenizer{
 
 
     public VNTokenizer(Reader input){
-        getTaggedWords(input);
-
+        super(input);
         this.termAttr = addAttribute(CharTermAttribute.class);
         this.posAttr = addAttribute(PositionIncrementAttribute.class);
         this.offsetAttr = addAttribute(OffsetAttribute.class);
@@ -40,6 +39,7 @@ public class VNTokenizer extends Tokenizer{
 
 
     private void getTaggedWords(Reader input){
+
         BufferedReader bufferedReader = new BufferedReader(input);
         StringBuffer bufferContent = new StringBuffer("");
         String line;
@@ -49,7 +49,6 @@ public class VNTokenizer extends Tokenizer{
                 bufferContent.append(line+"\n");
             }
             lastContent = bufferContent.toString();
-
             taggedWords = VietTokenizerWrapper.getVietTokenizer().segment(lastContent).split(" ");
             for(int i = 0; i <taggedWords.length;i++){
                 taggedWords[i] = taggedWords[i].replaceAll("_"," ");
@@ -58,6 +57,7 @@ public class VNTokenizer extends Tokenizer{
             System.err.println("Error Tokenizer Input : " + input);
             taggedWords = new String[0];
         }
+
         numWord = taggedWords.length;
         offset = 0;
         index = 0;
@@ -77,10 +77,14 @@ public class VNTokenizer extends Tokenizer{
 
         }
 
+        if(wordTag.equalsIgnoreCase("")){
 
-        termAttr.copyBuffer(wordTag.toCharArray(),0,wordTag.length());
-        posAttr.setPositionIncrement(1);
-        offsetAttr.setOffset(offset, offset+wordTag.length());
+        }else{
+            termAttr.copyBuffer(wordTag.toCharArray(),0,wordTag.length());
+            posAttr.setPositionIncrement(1);
+            offsetAttr.setOffset(offset, offset+wordTag.length());
+        }
+
 
         offset += wordTag.length();
 
@@ -98,14 +102,19 @@ public class VNTokenizer extends Tokenizer{
 
     @Override
     public final void end() {
+        try {
+            super.end();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         // set final offset
         int finalOffset = correctOffset(offset);
         offsetAttr.setOffset(finalOffset, finalOffset);
     }
 
     @Override
-    public void reset(Reader input) throws IOException {
-        super.reset(input);
+    public void reset() throws IOException {
+        super.reset();
         getTaggedWords(input);
     }
 }

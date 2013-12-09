@@ -1,5 +1,8 @@
 package com.bk.vnanalyzer;
 
+import org.apache.lucene.analysis.util.CharArraySet;
+import org.apache.lucene.util.Version;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -13,7 +16,7 @@ import java.util.Set;
  * Time: 11:26 AM
  */
 public class ViStopWordsProvider {
-    public static Set<String> getStopWords(String file){
+    public static CharArraySet getStopWords(String file){
         Set<String> stopWords = new HashSet<String>();
         try{
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -28,6 +31,6 @@ public class ViStopWordsProvider {
         }catch(IOException e){
             e.printStackTrace();
         }
-        return stopWords;
+        return new CharArraySet(Version.LUCENE_43,stopWords,true);
     }
 }
